@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "6c342ce9-5090-4d38-b06a-721debece0df",
+		"name": "Edenrobe",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET TOKEN-POST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"mutation($email_1:String!,$password_1:String!,$guest_quote_id_1:String){generateCustomerToken(email:$email_1,password:$password_1,guest_quote_id:$guest_quote_id_1){token}}\",\"variables\":{\"email_1\":\"aimankhan3116@gmail.com\",\"password_1\":\"AimanQaisar_3116\",\"guest_quote_id_1\":\"wOpSd9s9c6L1bjpAKhVhvtqV0Qwl8lNr\"}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://edenrobe.com/graphql",
+					"protocol": "https",
+					"host": [
+						"edenrobe",
+						"com"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "LOGIN BY USING TOKEN",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "generateCustomerToken",
+						"value": "2utoxlutfz8yakhygqqp8v2ir6th60fl",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://edenrobe.com/my-account/dashboard",
+					"protocol": "https",
+					"host": [
+						"edenrobe",
+						"com"
+					],
+					"path": [
+						"my-account",
+						"dashboard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ADD TO CART",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"event\":\"AddToCart\",\"message_id\":\"messageId-1671105923739-4945813658817-CE2TJ0BC77UA05OMKB30\",\"event_id\":\"\",\"is_onsite\":false,\"timestamp\":\"2022-12-15T12:05:23.739Z\",\"context\":{\"ad\":{\"sdk_env\":\"external\",\"jsb_status\":2},\"user\":{\"anonymous_id\":\"0a023c30-7ba0-4420-8469-86673c27335c\"},\"pixel\":{\"code\":\"CE2TJ0BC77UA05OMKB30\"},\"page\":{\"url\":\"https://edenrobe.com/product/men-s-navy-blue-basic-tee-emtbf22-004?size=5434\",\"referrer\":\"https://edenrobe.com/product/men-s-navy-blue-basic-tee-emtbf22-004?size=5432\"},\"library\":{\"name\":\"pixel.js\",\"version\":\"2.1.33\"},\"device\":{\"platform\":\"pc\"},\"session_id\":\"29ec700b-7c6f-11ed-bd88-08c0eb3d0734::X_qG5aqhnQJ1S88vTcIE-CE2TJ0BC77UA05OMKB30\",\"pageview_id\":\"pageId-1671105921809-5292686692338-CE2TJ0BC77UA05OMKB30\",\"variation_id\":\"test_3\",\"userAgent\":\"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36\"},\"properties\":{\"gtm_version\":\"0_1_18\",\"contents\":[{\"content_id\":\"EMTBF22-004\",\"content_name\":\"Men's Navy Blue Basic Tee - EMTBF22-004\",\"price\":1353,\"quantity\":1,\"content_type\":\"product\"}],\"currency\":\"PKR\",\"value\":1353}}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://analytics.tiktok.com/api/v2/pixel",
+					"protocol": "https",
+					"host": [
+						"analytics",
+						"tiktok",
+						"com"
+					],
+					"path": [
+						"api",
+						"v2",
+						"pixel"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
