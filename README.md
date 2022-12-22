@@ -12,3 +12,8 @@ Perform API Testing using POSTMAN for the following request:
 https://reqres.in/
 [Single User, CREATE, REGISTER- SUCCESSFUL, LOGIN-SUCCESSFUL, LOGIN-
 UNSUCCESSFULL]
+
+#Test Cases
+Create the manual test cases of the following pages:
+https://dvago.pk/collections/baby-care
+https://dvago.pk/cart
