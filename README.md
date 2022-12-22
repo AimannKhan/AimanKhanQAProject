@@ -1,4 +1,4 @@
-# PostmanAPITestingEdenrobe
+# PostmanAPITesting
 Test the edenrobe 
 Aiman Khan
 aimankhan3116@gmail.com
