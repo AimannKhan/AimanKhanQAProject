@@ -13,7 +13,12 @@ https://reqres.in/
 [Single User, CREATE, REGISTER- SUCCESSFUL, LOGIN-SUCCESSFUL, LOGIN-
 UNSUCCESSFULL]
 
-#Test Cases
+# Test Cases
 Create the manual test cases of the following pages:
+https://dvago.pk/collections/baby-care
+https://dvago.pk/cart
+
+# Using JIRA 
+# Create the Bug Summary Report of the following pages:
 https://dvago.pk/collections/baby-care
 https://dvago.pk/cart
